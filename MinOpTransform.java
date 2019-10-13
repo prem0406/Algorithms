@@ -20,6 +20,11 @@ class MinOpTransform{
 		char[] arr2 = B.toCharArray();
 		Arrays.sort(arr1);
 		Arrays.sort(arr2);
+		/*
+		Here We are checking that both strings contains same alphabets with equal frequency of occurence
+		each alphabet. This is easy method. Sort the both string into Array of Characters, Sort them and 
+		compare them. This technique is also in Anagram finding  algorithm.
+		*/
 		if(!Arrays.equals(arr1,arr2))
 			return -1;
 		
@@ -27,9 +32,17 @@ class MinOpTransform{
 		int j = B.length() - 1;
 		int res=0;
 		
+		/*
+		Remember : We are transforming B to A. We have to perform operations on B (index variable 'i' is
+		used for B)
+		
+		i and j will start from the last index of A and B.
+		res ( is used for counting the no. of operations) is incrementing everytime when the alphabets(letter
+		or character) not matched.
+		*/
 		while(i>=0){
 			if(A.charAt(i) != B.charAt(j))
-				res++;
+				res++;                     
 			else
 				j--;
 			i--;
