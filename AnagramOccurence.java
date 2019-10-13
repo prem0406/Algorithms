@@ -11,8 +11,8 @@ class AnagramOccurence{
 		int N = s1.length();
 		int n = s2.length();
 		int count = 0;
-		for(int i=0; i <= N-n; i++)                //remember here <= is used to ensure s1.substring() excludes the upperbound
-			if(findAnagram(s1.substring(i,i+n),s2))
+		for(int i=0; i <= N-n; i++)                	 //remember here <= is used because
+			if(findAnagram(s1.substring(i,i+n),s2))  // s1.substring() excludes the upperbound
 				count+=1;
 			
 		return count;
