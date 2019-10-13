@@ -3,8 +3,8 @@ public class KadaneAlgo {
 
 	public static void main(String args[])
 	{
-		int arr[]={-2,-1,-3,-4,-1,-2,-1,-5,-4};
-		//int arr[]={-2,1,-3,4,-1,2,1,-5,4};
+		//int arr[]={-2,-1,-3,-4,-1,-2,-1,-5,-4};
+		int arr[]={-2,1,-3,4,-1,2,1,-5,4};
 		//int arr[]={6,-9,-10,-8};
 		//int sum= new Algo().maxSubArray(arr);
 		//int sum= new Algo().maxSubArrayReturn(arr);
@@ -16,10 +16,14 @@ public class KadaneAlgo {
 		for(int i=A.beg ; i<=A.end ;i++)
 			System.out.println(arr[i]+" ");
 		*/
+
+		
 		A.maxSubArrayReturn(arr);
 		System.out.println("\nMax Sum is: "+A.maxSoFar);
 		for(int i=A.beg ; i<=A.end ;i++)
 			System.out.println(arr[i]+" ");
+
+
 		
 	}
 
@@ -86,11 +90,12 @@ public void maxSubArrayReturn(int[] nums) {
 	} 
     }
 	
-/*	for(int i=beg ; i<=end ;i++)
+	/*
+	for(int i=beg ; i<=end ;i++)
 		System.out.println(nums[i]+" ");
 
-    return maxSoFar;
-*/
+    retuwsrn maxSoFar;
+	*/
   }
 
 public void kadane(int arr[]) {
