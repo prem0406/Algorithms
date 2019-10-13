@@ -33,7 +33,7 @@ class MinOpTransform{
 		int res=0;
 		
 		/*
-		Remember : We are transforming B to A. We have to perform operations on B (index variable 'i' is
+		Remember : We are transforming A to B. We have to perform operations on A (index variable 'i' is
 		used for B)
 		
 		i and j will start from the last index of A and B.
